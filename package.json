@@ -1,0 +1,31 @@
+{
+  "name": "movies-nuxt",
+  "version": "1.0.0",
+  "description": "Movie web site with Vue Framework, and ssr Nuxt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nuxt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baesparza/Movies-Nuxt.git"
+  },
+  "keywords": [
+    "Nuxt",
+    "Vue",
+    "java",
+    "script",
+    "web",
+    "movies"
+  ],
+  "author": "baesparza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baesparza/Movies-Nuxt/issues"
+  },
+  "homepage": "https://github.com/baesparza/Movies-Nuxt#readme",
+  "dependencies": {
+    "nuxt": "^1.4.0"
+  }
+}

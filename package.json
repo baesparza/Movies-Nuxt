@@ -1,31 +1,25 @@
 {
   "name": "movies-nuxt",
   "version": "1.0.0",
-  "description": "Movie web site with Vue Framework, and ssr Nuxt",
-  "main": "index.js",
+  "description": "Nuxt.js project",
+  "author": "Bruno Esparza <bruno.be81@gmail.com>",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nuxt"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/baesparza/Movies-Nuxt.git"
-  },
-  "keywords": [
-    "Nuxt",
-    "Vue",
-    "java",
-    "script",
-    "web",
-    "movies"
-  ],
-  "author": "baesparza",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/baesparza/Movies-Nuxt/issues"
-  },
-  "homepage": "https://github.com/baesparza/Movies-Nuxt#readme",
   "dependencies": {
-    "nuxt": "^1.4.0"
+    "nuxt": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
   }
 }

@@ -18,13 +18,6 @@
     </nav>
 </template>
 
-<script>
-export default {
-  name: 'Navbar'
-}
-</script>
-
-
 <style scoped>
 nav {
   list-style: none;

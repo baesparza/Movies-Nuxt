@@ -1,3 +1,9 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/Movies-Nuxt/'
+  }
+} : {}
+
 module.exports = {
   /*
   ** Headers of the page
@@ -21,7 +27,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
+    extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -35,5 +41,6 @@ module.exports = {
   css: [
     '@/assets/bootstrap/bootstrap-grid.min.css',
     '@/assets/bootstrap/bootstrap-reboot.min.css'
-  ]
+  ],
+  routerBase
 }

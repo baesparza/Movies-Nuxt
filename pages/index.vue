@@ -44,7 +44,6 @@ export default {
 .item {
   border-radius: 5px;
   padding: 10px;
-  background: #3f3d3d;
   cursor: pointer;
 }
 </style>

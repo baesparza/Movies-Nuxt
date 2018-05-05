@@ -31,5 +31,9 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  css: [
+    '@/assets/bootstrap/bootstrap-grid.min.css',
+    '@/assets/bootstrap/bootstrap-reboot.min.css'
+  ]
 }

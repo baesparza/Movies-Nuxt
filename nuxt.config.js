@@ -13,7 +13,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      {rel:'manifest', href:'/manifest.json'}
+      { rel: 'manifest', href: '/manifest.json' }
     ]
   },
   loading: { color: '#3B8070' },

@@ -1,71 +1,54 @@
 <template>
-   <nav>
-        <ul class="container">
-            <li>
-              <router-link :to="{ name: 'index'}">
-                Home
-              </router-link>
-            </li>
-            <li class="search">
-              <input class="search-input" @keyup.enter="$router.push('/search/' + $event.target.value)" placeholder="Search movie">
-            </li>
-            <li>
-              <router-link :to="{ name: 'about'}">
-                About
-              </router-link>
-            </li>
-        </ul>
-    </nav>
+	<nav class="navbar">
+		<ul>
+      <li><router-link :to="{ name: 'index'}">Home</router-link></li>
+      <li><router-link :to="{ name: 'about'}">About</router-link></li>
+      <li>
+        <input @keyup.enter="$router.push('/search/' + $event.target.value)" placeholder="Search movie">
+      </li>
+	  </ul>
+  </nav>
 </template>
 
-<style scoped>
-nav {
-  list-style: none;
-}
-nav > ul > li {
-  display: inline;
-}
-nav > ul > li > a {
-  text-decoration: none;
-  margin-top: 5px;
-  display: block;
-  text-align: center;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.search-input {
+<style lang="scss" scoped>
+.navbar {
   width: 100%;
-  box-sizing: border-box;
-  background-color: transparent;
-  border: none;
+  background: linear-gradient(to right, #b06ab3, #4568dc);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+  margin: 0px;
 }
-.router-link-exact-active {
-  font-weight: 700;
-}
-.container {
-  display: flex;
+.navbar > ul {
+  margin: 0px;
+  padding: 0px;
   text-align: center;
 }
-.search {
-  flex: 1;
+.navbar > ul li {
+  display: inline-block;
 }
-.container > li {
-  flex: 1;
+.navbar > ul li a {
+  text-decoration: none;
+  color: #fff;
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: bold;
+  position: relative;
 }
-@media all and (max-width: 600px) {
-  .container {
-    flex-wrap: wrap;
-  }
-  .container > li {
-    flex-basis: 50%;
-  }
+.navbar > ul li a::before {
+  background: #fff none repeat scroll 0 0;
+  bottom: -2px;
+  height: 3px;
+  content: "";
+  left: 0;
+  position: absolute;
+  width: 0%;
+  transition: 0.5s;
 }
-@media all and (max-width: 400px) {
-  .container > li {
-    flex-basis: 100%;
-  }
-  .search {
-    order: 1;
-  }
+.navbar > ul li a:hover::before {
+  width: 100%;
+}
+input{
+  padding: 0px 6px;
 }
 </style>

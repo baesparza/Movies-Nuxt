@@ -26,6 +26,14 @@ export default {
       .then(res => {
         return { movies: res.data.results };
       });
+  },
+  head () {
+    return {
+      title: "Movies-vue",
+      meta: [
+        { hid: 'description', name: 'description', content: 'Movies app, build with vue and nuxt' }
+      ]
+    }
   }
 };
 </script>

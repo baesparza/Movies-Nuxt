@@ -1,10 +1,7 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/Movies-Nuxt/'
-  }
-} : {}
-
 module.exports = {
+    router: {
+      base: '/Movies-Nuxt/'
+    },
   head: {
     title: 'movies-nuxt',
     meta: [
@@ -32,6 +29,5 @@ module.exports = {
   css: [
     '@/assets/bootstrap/bootstrap-grid.min.css',
     '@/assets/bootstrap/bootstrap-reboot.min.css'
-  ],
-  ...routerBase
+  ]
 }

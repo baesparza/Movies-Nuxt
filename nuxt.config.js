@@ -33,5 +33,5 @@ module.exports = {
     '@/assets/bootstrap/bootstrap-grid.min.css',
     '@/assets/bootstrap/bootstrap-reboot.min.css'
   ],
-  routerBase
+  ...routerBase
 }

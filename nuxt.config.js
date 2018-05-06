@@ -1,6 +1,6 @@
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: 'https://baesparza.github.io/Movies-Nuxt/'
+    base: '/Movies-Nuxt/'
   }
 } : {}
 

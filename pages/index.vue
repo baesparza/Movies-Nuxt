@@ -4,7 +4,7 @@
       <li><router-link :to="{ name: 'index'}">Popular</router-link></li>
       <li><router-link :to="{ name: 'index-kids'}">Kids</router-link></li>
 	  </ul>
-    <router-view></router-view>
+    <nuxt-child/>
   </div>
 </template>
 
